@@ -6,6 +6,7 @@ class Person:
 
     def myfunc(self):
         print("Hello nama saya adalah " + self.nama)
+       # membuat object dari class person
         
 p1 = Person("jhon", 39,"Jakarta")
 p1.myfunc()
