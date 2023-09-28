@@ -1,0 +1,14 @@
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\bin\Debug\net7.0\latihan.exe
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\bin\Debug\net7.0\latihan.deps.json
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\bin\Debug\net7.0\latihan.runtimeconfig.json
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\bin\Debug\net7.0\latihan.dll
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\bin\Debug\net7.0\latihan.pdb
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.GeneratedMSBuildEditorConfig.editorconfig
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.AssemblyInfoInputs.cache
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.AssemblyInfo.cs
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.csproj.CoreCompileInputs.cache
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.dll
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\refint\latihan.dll
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.pdb
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\latihan.genruntimeconfig.cache
+G:\1. My Documents\1. E_Cecep Ependi\Python\OpenCV-Face-Recognition-master\FacialRecognition\latihan\obj\Debug\net7.0\ref\latihan.dll
