@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\latihan.csproj",
+      "projectUniqueName": "g:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\latihan.csproj",
       "projectName": "latihan",
-      "projectPath": "G:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\latihan.csproj",
+      "projectPath": "g:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\latihan.csproj",
       "packagesPath": "C:\\Users\\welltest.technicians\\.nuget\\packages\\",
-      "outputPath": "G:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\obj\\",
+      "outputPath": "g:\\1. My Documents\\1. E_Cecep Ependi\\Python\\OpenCV-Face-Recognition-master\\FacialRecognition\\latihan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\welltest.technicians\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
