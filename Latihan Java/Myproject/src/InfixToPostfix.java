@@ -36,14 +36,17 @@ public class InfixToPostfix {
         }
 
         while (!stack.isEmpty()) {
-            postfix.append(stack.pop());
+            char top = stack.pop();
+            if (top != '(') {
+                postfix.append(top);
+            }
         }
 
         return postfix.toString();
     }
 
     public static void main(String[] args) {
-        String infixExpression = "(A+B)*C-D/(E+F)";
+        String infixExpression = "(A+B^C)";
         String postfixExpression = infixToPostfix(infixExpression);
         System.out.println("Postfix Expression: " + postfixExpression);
     }

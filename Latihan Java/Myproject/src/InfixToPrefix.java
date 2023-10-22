@@ -48,7 +48,7 @@ public class InfixToPrefix {
     }
 
     public static void main(String[] args) {
-        String infixExpression = "(A+B)*C-D/(E+F)";
+        String infixExpression = "(A+B^C^D)*(E+F/D)";
         String prefixExpression = infixToPrefix(infixExpression);
         System.out.println("Prefix Expression: " + prefixExpression);
     }
