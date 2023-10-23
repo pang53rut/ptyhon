@@ -97,7 +97,7 @@ class Conversion:
 
 # Driver code
 if __name__ == '__main__':
-	exp = "((A+B)*C-(D-E))^(F+G)"
+	exp = "4+6*(5-2)/3"
 	obj = Conversion(len(exp))
 
 	# Function call

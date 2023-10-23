@@ -78,7 +78,7 @@ def infixToPrefix(infix):
 
 # Driver code
 if __name__ == '__main__':
-    s = "((A+B)*C-(D-E))^(F+G)"
+    s = "4+6*(5-2)/3"
     
     # Function call
     print(infixToPrefix(s))
