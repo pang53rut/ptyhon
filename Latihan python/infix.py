@@ -20,7 +20,7 @@ class Conversion:
 	def isEmpty(self):
 		return True if self.top == -1 else False
 
-	# Return the value of the top of the stack
+	# Return the value of the top of  the stack
 	def peek(self):
 		return self.array[-1]
 
