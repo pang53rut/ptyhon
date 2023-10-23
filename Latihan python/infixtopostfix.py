@@ -1,106 +1,39 @@
-# Python program to convert infix expression to postfix
-
-
-# Class to convert the expression
 class Conversion:
+    def __init__(self):
+        self.stack = []
+        self.output = []
+        self.precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
 
-	# Constructor to initialize the class variables
-	def __init__(self, capacity):
-		self.top = -1
-		self.capacity = capacity
-		
-		# This array is used a stack
-		self.array = []
-		
-		# Precedence setting
-		self.output = []
-		self.precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+    def is_operand(self, char):
+        return char.isalnum()
 
-	# Check if the stack is empty
-	def isEmpty(self):
-		return True if self.top == -1 else False
+    def higher_precedence(self, op):
+        return self.precedence[op] if op in self.precedence else 0
 
-	# Return the value of the top of  the stack
-	def peek(self):
-		return self.array[-1]
+    def infix_to_postfix(self, expression):
+        for char in expression:
+            if self.is_operand(char):
+                self.output.append(char)
+            elif char == '(':
+                self.stack.append(char)
+            elif char == ')':
+                while self.stack and self.stack[-1] != '(':
+                    self.output.append(self.stack.pop())
+                self.stack.pop()  # Pop '(' from the stack
+            else:
+                while self.stack and self.higher_precedence(char) <= self.higher_precedence(self.stack[-1]):
+                    self.output.append(self.stack.pop())
+                self.stack.append(char)
 
-	# Pop the element from the stack
-	def pop(self):
-		if not self.isEmpty():
-			self.top -= 1
-			return self.array.pop()
-		else:
-			return "$"
+        while self.stack:
+            self.output.append(self.stack.pop())
 
-	# Push the element to the stack
-	def push(self, op):
-		self.top += 1
-		self.array.append(op)
-
-	# A utility function to check is the given character
-	# is operand
-	def isOperand(self, ch):
-		return ch.isalpha()
-
-	# Check if the precedence of operator is strictly
-	# less than top of stack or not
-	def notGreater(self, i):
-		try:
-			a = self.precedence[i]
-			b = self.precedence[self.peek()]
-			return True if a <= b else False
-		except KeyError:
-			return False
-
-	# The main function that
-	# converts given infix expression
-	# to postfix expression
-	def infixToPostfix(self, exp):
-
-		# Iterate over the expression for conversion
-		for i in exp:
-			
-			# If the character is an operand,
-			# add it to output
-			if self.isOperand(i):
-				self.output.append(i)
-
-			# If the character is an '(', push it to stack
-			elif i == '(':
-				self.push(i)
-
-			# If the scanned character is an ')', pop and
-			# output from the stack until and '(' is found
-			elif i == ')':
-				while((not self.isEmpty()) and
-					self.peek() != '('):
-					a = self.pop()
-					self.output.append(a)
-				if (not self.isEmpty() and self.peek() != '('):
-					return -1
-				else:
-					self.pop()
-
-			# An operator is encountered
-			else:
-				while(not self.isEmpty() and self.notGreater(i)):
-					self.output.append(self.pop())
-				self.push(i)
-
-		# Pop all the operator from the stack
-		while not self.isEmpty():
-			self.output.append(self.pop())
-
-		for ch in self.output:
-			print(ch, end="")
+        return ''.join(self.output)
 
 
 # Driver code
 if __name__ == '__main__':
-	exp = "4+6*(5-2)/3"
-	obj = Conversion(len(exp))
-
-	# Function call
-	obj.infixToPostfix(exp)
-
-# This code is contributed by Nikhil Kumar Singh(nickzuck_007)
+    exp = "((A+B)*C-(D-E))^(F+G)"
+    converter = Conversion()
+    postfix_expression = converter.infix_to_postfix(exp)
+    print("Postfix Expression:", postfix_expression)
